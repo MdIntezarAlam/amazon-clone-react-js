@@ -1,12 +1,11 @@
 import React from 'react'
 import '../../styles/header.css'
 import logo from '../../assets/logo.jpg'
-import SearchIcon from '@material-ui/icons/Search';
-import FlagIcon from '@material-ui/icons/Flag';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import SearchIcon from '@mui/icons-material/Search';
+import FlagIcon from '@mui/icons-material/Flag';
 import { Link } from 'react-router-dom'
 import { headerOptionValue } from '../../utils/constant';
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Header = () => {
   return (
