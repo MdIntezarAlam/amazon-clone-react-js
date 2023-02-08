@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import '../../styles/middleBanner.css'
 import { middleBanner } from '../../utils/constant'
+import { Link } from 'react-router-dom'
 
 const MiddleBanner = ({ day, detail }) => {
     const [state, setState] = useState(middleBanner)
     
     return (
-        <div className='middleBanner'>
+        <Link to="/mobile" className='middleBanner'>
             <div className='m_header'>
                 <span className='text__'>{day}</span>
                 <span className='span'>{detail}</span>
@@ -25,7 +26,7 @@ const MiddleBanner = ({ day, detail }) => {
                 ))}
 
             </div>
-        </div>
+        </Link>
     )
 }
 
